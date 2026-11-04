@@ -1,9 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
-<title>Medocare Mart</title>
+<!doctype html><html lang="en"><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body><title>Medocare Mart</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@1,125,800&family=Baloo+2:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@1,125,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap">
 <style>
 /* Layout: single scrolling storefront. Sticky header, split hero (copy + office photo), red ticker band,
    bordered solution grid, machine with tappable hotspots, 3-step usage, about, FAQ accordion, patterned CTA, enquiry form. */
@@ -12,8 +11,8 @@
   --red:#D3171E; --red-soft:#FCEBE9; --btn:#18191B; --btn-hover:#000000; --on-red:#FFFFFF;
   --band:#18191B; --band-fg:#FFFFFF; --shadow:0 24px 60px -26px rgba(24,25,27,.35);
   --glass:rgba(255,255,255,.86);
-  --f-display:'Baloo 2','Nunito','Trebuchet MS',sans-serif;
-  --f-body:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --f-display:'Plus Jakarta Sans','Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --f-body:'Plus Jakarta Sans','Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
   --f-logo:'Archivo','Arial Black',Helvetica,sans-serif;
 }
 :root[data-theme="dark"]{
@@ -67,7 +66,7 @@ section[id]{scroll-margin-top:84px}
 :root[data-theme="dark"] .moon{display:block}
 
 /* type */
-h1,h2,h3{font-family:var(--f-display);font-weight:800;margin:0;text-wrap:balance}
+h1,h2,h3{font-family:var(--f-display);font-weight:800;margin:0;text-wrap:balance;letter-spacing:-.03em}
 h1{font-size:clamp(42px,6.4vw,84px);line-height:1.02;color:var(--fg);letter-spacing:-.01em}
 h2{font-size:clamp(30px,4vw,50px);line-height:1.1;color:var(--fg);letter-spacing:-.005em}
 h3{font-size:22px;line-height:1.2}
@@ -472,7 +471,7 @@ html:not(.ready) .w,html:not(.ready) .fade-up,html:not(.ready) .mach,html:not(.r
 @keyframes hxZoom{from{transform:scale(1)}to{transform:scale(1.07)}}
 .hx .wrap{width:100%}
 .hx-in{display:grid;gap:clamp(22px,3vw,34px);justify-items:start}
-.hx h1{color:#fff;font-size:clamp(36px,6.3vw,94px);line-height:1;letter-spacing:-.02em;text-shadow:0 4px 30px rgba(0,0,0,.45);max-width:none}
+.hx h1{color:#fff;font-size:clamp(34px,5.8vw,86px);line-height:1.04;letter-spacing:-.04em;text-shadow:0 4px 30px rgba(0,0,0,.45);max-width:none}
 .hx h1 span{display:block}
 .hx h1 .hx-acc{color:var(--hx-red)}
 .hx-lead{margin:0;max-width:60ch;padding:2px 0 2px 20px;border-left:3px solid var(--hx-red);color:#EDEDF0;font-size:clamp(16px,1.5vw,20px);line-height:1.6}
@@ -486,12 +485,12 @@ html:not(.ready) .w,html:not(.ready) .fade-up,html:not(.ready) .mach,html:not(.r
 /* ---------- impact: numbers card + four promises ---------- */
 .impact{position:relative;overflow:hidden;isolation:isolate;padding-top:clamp(64px,8vw,110px)}
 .impact h2.big{text-align:center;font-size:clamp(28px,4.2vw,52px);background:linear-gradient(95deg,#D3171E,#FF5A4F 60%,#D3171E);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:clamp(30px,4vw,52px)}
-.im-card{position:relative;overflow:hidden;isolation:isolate;border-radius:30px;padding:clamp(34px,5vw,64px) clamp(18px,4vw,56px);display:grid;grid-template-columns:repeat(4,1fr);gap:24px;color:#fff;text-align:center;background:linear-gradient(135deg,#E0232A,#B3121A 70%);box-shadow:0 40px 80px -34px rgba(179,18,26,.65),inset 0 1.5px 0 rgba(255,255,255,.45)}
+.im-card{position:relative;overflow:hidden;isolation:isolate;border-radius:30px;padding:clamp(34px,5vw,64px) clamp(18px,4vw,56px);display:grid;grid-template-columns:repeat(5,1fr);gap:24px;color:#fff;text-align:center;background:linear-gradient(135deg,#E0232A,#B3121A 70%);box-shadow:0 40px 80px -34px rgba(179,18,26,.65),inset 0 1.5px 0 rgba(255,255,255,.45)}
 .im-card::before{content:"";position:absolute;inset:0;z-index:-1;background:url(img/pattern-strip.jpg) center/cover;opacity:.14;mix-blend-mode:soft-light}
 .im-card::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(105deg,transparent 35%,rgba(255,255,255,.22) 50%,transparent 65%);transform:translateX(-130%);animation:sheen 7s ease-in-out 1.5s infinite}
 .im-s{display:grid;gap:6px;justify-items:center;position:relative}
 .im-s + .im-s::before{content:"";position:absolute;left:-12px;top:12%;bottom:12%;width:1px;background:linear-gradient(transparent,rgba(255,255,255,.4),transparent)}
-.im-n{font:800 clamp(44px,6.4vw,92px)/1 var(--f-display);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.im-n{font:800 clamp(40px,4.6vw,68px)/1 var(--f-display);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
 .im-n sup{font-size:.42em;vertical-align:top;position:relative;top:.18em;margin-left:2px;font-weight:700}
 .im-l{font:500 clamp(15px,1.6vw,22px)/1.2 var(--f-body);color:#FFE3DF}
 .im-feat{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(18px,3vw,40px);margin-top:clamp(48px,6vw,86px);text-align:center}
@@ -500,7 +499,7 @@ html:not(.ready) .w,html:not(.ready) .fade-up,html:not(.ready) .mach,html:not(.r
 .im-f:hover span.ic{transform:translateY(-6px) rotate(-6deg) scale(1.06)}
 .im-f svg{width:48px;height:48px;fill:none;stroke:var(--red);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .im-f p{margin:0;font:500 clamp(16px,1.5vw,20px)/1.4 var(--f-body);max-width:20ch}
-@media (max-width:860px){.im-card,.im-feat{grid-template-columns:repeat(2,1fr)}.im-s:nth-child(3)::before{display:none}.im-feat{row-gap:34px}}
+@media (max-width:860px){.im-card,.im-feat{grid-template-columns:repeat(2,1fr)}.im-s:nth-child(odd)::before{display:none}.im-s:last-child{grid-column:1/-1}.im-s:last-child::before{display:none}.im-feat{row-gap:34px}}
 @media (max-width:420px){.im-card{gap:28px 10px;border-radius:24px}.im-s + .im-s::before{display:none}}
 
 /* ---------- brands ---------- */
@@ -508,7 +507,7 @@ html:not(.ready) .w,html:not(.ready) .fade-up,html:not(.ready) .mach,html:not(.r
 .bf{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:-8px 0 30px}
 .bf button{padding:11px 20px;border-radius:99px;font:600 14px/1 var(--f-body);color:var(--fg);transition:transform .25s,box-shadow .25s,background .25s,color .25s}
 .bf button:hover{transform:translateY(-2px)}
-.bf button[aria-pressed="true"]{background:linear-gradient(180deg,rgba(255,255,255,.42),rgba(255,255,255,0) 54%),color-mix(in srgb,var(--red) 88%,transparent);color:#fff;border-color:rgba(255,255,255,.5)}
+.bf button[aria-pressed="true"]{background:var(--red);border-color:var(--red);color:#fff}
 .bgrid{display:grid;grid-template-columns:repeat(10,1fr);gap:12px}
 .bt{position:relative;aspect-ratio:186/144;display:grid;place-items:center;border-radius:20px;background:#fff;border:1px solid var(--line);overflow:hidden;box-shadow:inset 0 1.5px 0 #fff,0 10px 24px -16px rgba(24,25,27,.35);transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s,opacity .4s,filter .4s}
 .bt img{width:100%;height:100%;object-fit:contain;display:block;padding:7px 9px;box-sizing:border-box}
@@ -551,43 +550,42 @@ html:not(.ready) .w,html:not(.ready) .fade-up,html:not(.ready) .mach,html:not(.r
 .pk-hint i{width:8px;height:8px;border-radius:50%;background:var(--red);animation:ping 1.8s ease-out infinite}
 .pk-hint.gone{opacity:0;transform:translateY(-8px)}
 
-/* ---------- liquid glass: every button ---------- */
-:root{--lg-edge:rgba(255,255,255,.7);--lg-fill:rgba(255,255,255,.34);--lg-shadow:rgba(24,25,27,.28)}
-:root[data-theme="dark"]{--lg-edge:rgba(255,255,255,.28);--lg-fill:rgba(255,255,255,.08);--lg-shadow:rgba(0,0,0,.6)}
-.btn,.icon-btn,.pill,.zoom,.pk,.pk-hint,.rev,.tile,.lb-x,.lb-prev,.lb-next,.ftr .socials a,.feat button,.hot,.fab,.wa-fab,#wa-fab{
-  -webkit-backdrop-filter:blur(16px) saturate(1.8);backdrop-filter:blur(16px) saturate(1.8)}
-/* clear glass (secondary, pills, cards) */
-.btn.ghost,.icon-btn,.pill,.pk,.pk-hint,.rev,.tile,.feat button{
-  background:linear-gradient(180deg,rgba(255,255,255,.62),rgba(255,255,255,0) 52%),radial-gradient(120% 140% at 15% 0%,rgba(255,255,255,.55),transparent 55%),color-mix(in srgb,var(--surface) 48%,transparent);
-  border:1px solid var(--lg-edge);
-  box-shadow:inset 0 1.5px 0 rgba(255,255,255,.95),inset 0 -1.5px 0 rgba(255,255,255,.28),inset 0 0 22px rgba(255,255,255,.28),0 0 0 1px rgba(24,25,27,.05),0 14px 30px -14px var(--lg-shadow)}
-:root[data-theme="dark"] .btn.ghost,:root[data-theme="dark"] .icon-btn,:root[data-theme="dark"] .pill,:root[data-theme="dark"] .pk,:root[data-theme="dark"] .pk-hint,:root[data-theme="dark"] .rev,:root[data-theme="dark"] .tile,:root[data-theme="dark"] .feat button{
-  background:linear-gradient(180deg,rgba(255,255,255,.16),rgba(255,255,255,0) 50%),color-mix(in srgb,var(--surface) 55%,transparent);
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.4),inset 0 -1px 0 rgba(255,255,255,.06),0 14px 30px -14px var(--lg-shadow)}
-.feat button.on{background:linear-gradient(180deg,rgba(255,255,255,.5),rgba(255,255,255,0) 55%),color-mix(in srgb,var(--red-soft) 72%,transparent);border-color:var(--red)}
-.btn.ghost:hover,.icon-btn:hover,.pill:hover{border-color:var(--lg-edge);box-shadow:inset 0 1.5px 0 #fff,inset 0 0 26px rgba(255,255,255,.4),0 0 0 1px rgba(211,23,30,.25),0 18px 34px -14px rgba(211,23,30,.35);background-color:transparent}
-/* tinted glass (primary) */
-.btn:not(.ghost):not(.light):not(.line){
-  background:linear-gradient(180deg,rgba(255,255,255,.42),rgba(255,255,255,0) 54%),radial-gradient(90% 120% at 18% 0%,rgba(255,255,255,.3),transparent 60%),color-mix(in srgb,var(--btn) 80%,transparent);
-  border:1px solid rgba(255,255,255,.4);
-  box-shadow:inset 0 1.5px 0 rgba(255,255,255,.65),inset 0 -2px 6px rgba(255,255,255,.12),inset 0 0 20px rgba(255,255,255,.1),0 14px 28px -12px color-mix(in srgb,var(--btn) 80%,transparent)}
-.btn:not(.ghost):not(.light):not(.line):hover{background:linear-gradient(180deg,rgba(255,255,255,.5),rgba(255,255,255,0) 56%),radial-gradient(90% 120% at 18% 0%,rgba(255,255,255,.35),transparent 60%),color-mix(in srgb,var(--btn-hover) 86%,transparent)}
-/* white glass on the red band */
-.btn.light{background:linear-gradient(180deg,#fff,rgba(255,255,255,.7)),rgba(255,255,255,.6);border:1px solid rgba(255,255,255,.9);box-shadow:inset 0 1.5px 0 #fff,inset 0 -3px 8px rgba(211,23,30,.1),0 14px 30px -12px rgba(0,0,0,.5)}
-.btn.line{background:linear-gradient(180deg,rgba(255,255,255,.26),rgba(255,255,255,.04) 56%);border:1px solid rgba(255,255,255,.55);box-shadow:inset 0 1.5px 0 rgba(255,255,255,.6),inset 0 0 18px rgba(255,255,255,.1)}
-.btn.line:hover{background:linear-gradient(180deg,rgba(255,255,255,.36),rgba(255,255,255,.1) 56%)}
-/* dark glass */
-.zoom,.lb-x,.lb-prev,.lb-next{background:linear-gradient(180deg,rgba(255,255,255,.3),rgba(255,255,255,0) 52%),rgba(24,25,27,.62);border:1px solid rgba(255,255,255,.3);box-shadow:inset 0 1.5px 0 rgba(255,255,255,.5),inset 0 0 16px rgba(255,255,255,.08),0 10px 24px -10px rgba(0,0,0,.5)}
-.zoom:hover,.stage:hover .zoom{background:linear-gradient(180deg,rgba(255,255,255,.34),rgba(255,255,255,0) 52%),rgba(24,25,27,.8)}
-.ftr .socials a{background:linear-gradient(180deg,rgba(255,255,255,.26),rgba(255,255,255,0) 55%),rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.28);box-shadow:inset 0 1.5px 0 rgba(255,255,255,.5)}
-.hot{border:1.5px solid rgba(255,255,255,.7);background:linear-gradient(180deg,rgba(255,255,255,.5),rgba(255,255,255,0) 55%),color-mix(in srgb,var(--red) 82%,transparent);box-shadow:inset 0 1px 0 rgba(255,255,255,.8),0 0 0 4px rgba(196,22,28,.18),0 6px 12px -4px rgba(196,22,28,.5)}
-.hot.on{box-shadow:inset 0 1px 0 rgba(255,255,255,.8),0 0 0 8px rgba(196,22,28,.25),0 8px 16px -4px rgba(196,22,28,.6)}
-/* the WhatsApp button */
-#wa-fab{background:linear-gradient(180deg,rgba(255,255,255,.5),rgba(255,255,255,0) 52%),rgba(37,211,102,.82)!important;border:1px solid rgba(255,255,255,.65)!important;box-shadow:inset 0 1.5px 0 rgba(255,255,255,.8),0 14px 28px -10px rgba(18,140,70,.7)!important}
-/* moving shine on hover */
-.btn{position:relative;overflow:hidden;isolation:isolate}
-.btn::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(110deg,transparent 35%,rgba(255,255,255,.55) 50%,transparent 65%);transform:translateX(-120%);transition:transform .8s cubic-bezier(.2,.7,.2,1);pointer-events:none}
-.btn:hover::after{transform:translateX(120%)}
+/* plain surfaces (glass removed) */
+.pk,.pk-hint{background:var(--surface);border:1px solid var(--line);box-shadow:0 18px 36px -18px rgba(24,25,27,.45)}
+.rev{background:var(--surface);border:1px solid var(--line);box-shadow:0 18px 40px -26px rgba(24,25,27,.35)}
+.rev:hover{box-shadow:0 26px 50px -24px rgba(211,23,30,.35);border-color:rgba(211,23,30,.3)}
+
+/* ---------- hover: every button pops up and changes colour ---------- */
+.btn{transition:transform .35s cubic-bezier(.2,1.4,.4,1),background .25s,color .25s,border-color .25s,box-shadow .3s}
+.btn:hover{background:var(--red);border-color:var(--red);color:#fff;transform:translate(var(--mx,0px),calc(var(--my,0px) - 4px)) scale(1.06);box-shadow:0 18px 34px -14px rgba(211,23,30,.65)}
+.btn:active{transform:translate(var(--mx,0px),var(--my,0px)) scale(.97)}
+.btn.ghost:hover{background:var(--fg);border-color:var(--fg);color:var(--bg);box-shadow:0 18px 34px -14px rgba(24,25,27,.5)}
+.btn.light:hover{background:#18191B;border-color:#18191B;color:#fff;box-shadow:0 18px 34px -14px rgba(0,0,0,.6)}
+.btn.line:hover{background:var(--hx-red,#F2353B);border-color:var(--hx-red,#F2353B);color:#fff;box-shadow:0 18px 34px -14px rgba(242,53,59,.7)}
+.hx .btn:not(.line):hover{background:#fff;border-color:#fff;color:#D3171E;box-shadow:0 18px 34px -14px rgba(0,0,0,.6)}
+.icon-btn{transition:transform .35s cubic-bezier(.2,1.4,.4,1),background .25s,color .25s,border-color .25s}
+.icon-btn:hover{background:var(--red);border-color:var(--red);color:#fff;transform:scale(1.12)}
+.pill{transition:transform .35s cubic-bezier(.2,1.4,.4,1),background .25s,color .25s,border-color .25s}
+.pill:hover{background:var(--red);border-color:var(--red);color:#fff;transform:translateY(-5px) scale(1.05)}
+.feat button{transition:transform .35s cubic-bezier(.2,1.4,.4,1),border-color .25s,background .25s}
+.feat button:hover{transform:translateX(6px) scale(1.015);border-color:var(--red);background:var(--red-soft)}
+.zoom:hover,.stage:hover .zoom{background:var(--red);transform:scale(1.08)}
+.in-skip{display:none}
+
+/* ---------- floating contact stack (right edge) ---------- */
+.fl{position:fixed;right:max(10px,env(safe-area-inset-right,0px));top:50%;transform:translateY(-50%);z-index:55;display:grid;gap:12px}
+.fl a{position:relative;width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:var(--red);color:#fff;box-shadow:0 14px 28px -12px rgba(211,23,30,.6);transition:transform .35s cubic-bezier(.2,1.4,.4,1),background .25s,color .25s,box-shadow .3s}
+.fl a svg{width:25px;height:25px;display:block;transition:transform .35s cubic-bezier(.2,1.4,.4,1)}
+.fl a::after{content:attr(data-l);position:absolute;right:calc(100% + 12px);top:50%;transform:translate(10px,-50%) scale(.85);transform-origin:right center;padding:9px 14px;border-radius:10px;background:#18191B;color:#fff;font:600 13px/1 var(--f-body);white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .25s,transform .3s cubic-bezier(.2,1.4,.4,1)}
+.fl a:hover{transform:translateX(-8px) scale(1.12);box-shadow:0 20px 34px -12px rgba(0,0,0,.45)}
+.fl a:hover svg{transform:rotate(-8deg) scale(1.08)}
+.fl a:hover::after{opacity:1;transform:translate(0,-50%) scale(1)}
+.fl a.f-wa:hover{background:#25D366}
+.fl a.f-ph:hover{background:#18191B}
+.fl a.f-ms:hover{background:#fff;color:var(--red);box-shadow:0 20px 34px -12px rgba(211,23,30,.5),inset 0 0 0 2px var(--red)}
+.fl a:active{transform:translateX(-4px) scale(.96)}
+@media (max-width:600px){.fl{gap:9px;right:6px}.fl a{width:44px;height:44px;border-radius:14px}.fl a svg{width:22px;height:22px}.fl a::after{display:none}}
+
 @media (max-width:600px){.pk{width:100px}.pk-img{height:92px}}
 
 @media (prefers-reduced-motion:reduce){
@@ -665,7 +663,8 @@ html:not(.ready) .w,html:not(.ready) .fade-up,html:not(.ready) .mach,html:not(.r
   <div class="wrap">
     <h2 class="big rv">Smart snacking, one tap at a time.</h2>
     <div class="im-card rv" id="imcard">
-      <div class="im-s"><div class="im-n"><span data-to="50">50</span><sup>+</sup></div><div class="im-l">Brands</div></div>
+      <div class="im-s"><div class="im-n"><span data-to="100">100</span><sup>+</sup></div><div class="im-l">Locations</div></div>
+      <div class="im-s"><div class="im-n"><span data-to="100">100</span><sup>+</sup></div><div class="im-l">Brands</div></div>
       <div class="im-s"><div class="im-n"><span data-to="5">5</span></div><div class="im-l">Categories</div></div>
       <div class="im-s"><div class="im-n"><span data-to="24">24</span><sup>/7</sup></div><div class="im-l">Always open</div></div>
       <div class="im-s"><div class="im-n"><span data-to="3">3</span></div><div class="im-l">Steps to snack</div></div>
@@ -934,9 +933,11 @@ html:not(.ready) .w,html:not(.ready) .fade-up,html:not(.ready) .mach,html:not(.r
   </figure>
 </div>
 
-<a class="wa" id="wa-fab" href="https://wa.me/?text=Hi%20Medocare%20Mart%2C%20I%20would%20like%20to%20know%20more%20about%20your%20vending%20machines." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-  <svg viewBox="0 0 32 32"><path d="M16.04 3C9.4 3 4 8.4 4 15.03c0 2.12.55 4.19 1.6 6.01L4 28l7.1-1.86a12 12 0 004.94 1.06C22.68 27.2 28 21.8 28 15.17 28 8.4 22.68 3 16.04 3zm0 21.95a9.9 9.9 0 01-5.04-1.38l-.36-.21-3.78.99 1.01-3.68-.24-.38a9.8 9.8 0 01-1.5-5.26c0-5.44 4.45-9.86 9.92-9.86 5.45 0 9.9 4.42 9.9 9.86 0 5.45-4.45 9.92-9.9 9.92zm5.43-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35z"/></svg>
-</a>
+<div class="fl" id="fl" aria-label="Contact Medocare Mart">
+  <a class="f-wa" id="wa-fab" data-l="WhatsApp us" href="https://wa.me/?text=Hi%20Medocare%20Mart%2C%20I%20would%20like%20to%20know%20more%20about%20your%20vending%20machines." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="3 3 26 26" aria-hidden="true"><path fill="currentColor" d="M16.04 3C9.4 3 4 8.4 4 15.03c0 2.12.55 4.19 1.6 6.01L4 28l7.1-1.86a12 12 0 004.94 1.06C22.68 27.2 28 21.8 28 15.17 28 8.4 22.68 3 16.04 3zm0 21.95a9.9 9.9 0 01-5.04-1.38l-.36-.21-3.78.99 1.01-3.68-.24-.38a9.8 9.8 0 01-1.5-5.26c0-5.44 4.45-9.86 9.92-9.86 5.45 0 9.9 4.42 9.9 9.86 0 5.45-4.45 9.92-9.9 9.92zm5.43-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35z"/></svg></a>
+  <a class="f-ph" data-l="Call +91 99913 33144" href="tel:+919991333144" aria-label="Call Medocare Mart"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg></a>
+  <a class="f-ms" data-l="Send an enquiry" href="#contact" aria-label="Send an enquiry"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 4h12a2 2 0 012 2v7a2 2 0 01-2 2H9l-4 3.5V15H4a2 2 0 01-2-2V6a2 2 0 012-2z"/><path fill="currentColor" opacity=".55" d="M20 8.5V14a4 4 0 01-4 4h-3.2l.9.8a2 2 0 001.3.5H19l3 2.2V10.5a2 2 0 00-2-2z"/></svg></a>
+</div>
 
 <script>
 /* Business WhatsApp number: country code, no plus sign. */
