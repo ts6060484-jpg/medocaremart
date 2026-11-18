@@ -471,10 +471,10 @@ html:not(.ready) .w,html:not(.ready) .fade-up,html:not(.ready) .mach,html:not(.r
 @keyframes hxZoom{from{transform:scale(1)}to{transform:scale(1.07)}}
 .hx .wrap{width:100%}
 .hx-in{display:grid;gap:clamp(22px,3vw,34px);justify-items:start}
-.hx h1{color:#fff;font-size:clamp(34px,5.8vw,86px);line-height:1.04;letter-spacing:-.04em;text-shadow:0 4px 30px rgba(0,0,0,.45);max-width:none}
+.hx h1{color:#fff;font-size:clamp(28px,4.3vw,64px);line-height:1.06;letter-spacing:-.04em;text-shadow:0 4px 30px rgba(0,0,0,.45);max-width:none}
 .hx h1 span{display:block}
 .hx h1 .hx-acc{color:var(--hx-red)}
-.hx-lead{margin:0;max-width:60ch;padding:2px 0 2px 20px;border-left:3px solid var(--hx-red);color:#EDEDF0;font-size:clamp(16px,1.5vw,20px);line-height:1.6}
+.hx-lead{margin:0;max-width:60ch;padding:2px 0 2px 20px;border-left:3px solid var(--hx-red);color:#EDEDF0;font-size:clamp(15px,1.25vw,18px);line-height:1.6}
 .hx .btn:not(.line){--btn:#D3171E;--btn-hover:#E52A31;--on-red:#fff}
 .hx-meta{display:flex;flex-wrap:wrap;gap:10px 24px;color:#D4D5D9;font-size:14px;font-weight:500}
 .hx-meta i{font-style:normal;display:flex;align-items:center;gap:8px}
@@ -508,20 +508,19 @@ html:not(.ready) .w,html:not(.ready) .fade-up,html:not(.ready) .mach,html:not(.r
 .bf button{padding:11px 20px;border-radius:99px;font:600 14px/1 var(--f-body);color:var(--fg);transition:transform .25s,box-shadow .25s,background .25s,color .25s}
 .bf button:hover{transform:translateY(-2px)}
 .bf button[aria-pressed="true"]{background:var(--red);border-color:var(--red);color:#fff}
-.bgrid{display:grid;grid-template-columns:repeat(10,1fr);gap:12px}
-.bt{position:relative;aspect-ratio:186/144;display:grid;place-items:center;border-radius:20px;background:#fff;border:1px solid var(--line);overflow:hidden;box-shadow:inset 0 1.5px 0 #fff,0 10px 24px -16px rgba(24,25,27,.35);transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s,opacity .4s,filter .4s}
-.bt-t{padding:6px 8px;text-align:center;font:800 clamp(12px,1.25vw,17px)/1.1 var(--f-display);letter-spacing:-.02em;color:#18191B;text-wrap:balance}
-.bt-t.sm{font-size:clamp(10px,1vw,14px)}
-.bt:hover .bt-t{color:var(--red)}
+.bgrid{display:grid;gap:14px;margin-inline:calc(50% - 50vw);overflow:hidden;-webkit-mask:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);padding:10px 0 22px}
+.bmq-row{overflow:visible;display:flex}
+.bmq-track{display:flex;gap:14px;width:max-content;flex:none;animation:bmq linear infinite;will-change:transform}
+.bgrid:hover .bmq-track{animation-play-state:paused}
+@keyframes bmq{from{transform:translateX(0)}to{transform:translateX(calc(-50% - 7px))}}
+.bt{position:relative;flex:none;width:clamp(120px,11.5vw,168px);aspect-ratio:186/144;display:grid;place-items:center;border-radius:20px;background:#fff;border:1px solid var(--line);overflow:hidden;box-shadow:0 10px 24px -16px rgba(24,25,27,.35);transition:transform .35s cubic-bezier(.2,1.4,.4,1),box-shadow .35s,border-color .3s}
 .bt img{width:100%;height:100%;object-fit:contain;display:block;padding:7px 9px;box-sizing:border-box}
-.bt:hover{transform:translateY(-6px) scale(1.04);z-index:2;box-shadow:inset 0 1.5px 0 #fff,0 22px 34px -16px rgba(211,23,30,.45);border-color:rgba(211,23,30,.35)}
+.bt:hover{transform:translateY(-6px) scale(1.07);z-index:2;box-shadow:0 22px 34px -16px rgba(211,23,30,.45);border-color:rgba(211,23,30,.4)}
 .bt::after{content:attr(data-n);position:absolute;left:50%;bottom:6px;transform:translate(-50%,8px);padding:5px 10px;border-radius:99px;background:rgba(24,25,27,.86);color:#fff;font:600 11px/1 var(--f-body);white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s}
 .bt:hover::after{opacity:1;transform:translate(-50%,0)}
-.bt.off{opacity:.14;filter:grayscale(1);transform:scale(.92)}
 .b-note{margin:28px 0 0;text-align:center;color:var(--muted);font-size:13px}
-@media (max-width:1180px){.bgrid{grid-template-columns:repeat(6,1fr)}}
-@media (max-width:760px){.bgrid{grid-template-columns:repeat(4,1fr);gap:10px}}
-@media (max-width:480px){.bgrid{grid-template-columns:repeat(3,1fr);gap:8px}.bt{border-radius:14px}}
+@media (max-width:480px){.bt{border-radius:14px}.bgrid,.bmq-track{gap:10px}}
+@media (prefers-reduced-motion:reduce){.bmq-track{animation-duration:140s!important}}
 
 /* ---------- reviews ---------- */
 .reviews{position:relative;overflow:hidden;isolation:isolate}
@@ -693,7 +692,7 @@ html:not(.ready) .w,html:not(.ready) .fade-up,html:not(.ready) .mach,html:not(.r
     <div class="sec-head c rv">
       <div class="eyebrow">Brands</div>
       <h2>The brands people already love</h2>
-      <p class="lead">Fifty trusted names across cold drinks, chocolates, biscuits, chips and snacks, ready inside your machine.</p>
+      <p class="lead">Nearly a hundred trusted names across cold drinks, chocolates, biscuits, chips and snacks, ready inside your machine.</p>
     </div>
     <div class="bf rv" id="bf" role="group" aria-label="Filter brands"></div>
     <div class="bgrid" id="bgrid"></div>
@@ -1316,18 +1315,27 @@ $$('a', nav).forEach(a => a.addEventListener('click', () => { nav.classList.remo
   const g = $('#bgrid'), f = $('#bf'); if (!g) return;
   const B = ["Coca-Cola|d", "Pepsi|d", "Sprite|d", "Thums Up|d", "Fanta|d", "Mountain Dew|d", "Sting|d", "Red Bull|d", "Maaza|d", "Appy Fizz|d", "Cadbury Dairy Milk|c", "KitKat|c", "Snickers|c", "5 Star|c", "Munch|c", "Perk|c", "Kinder Joy|c", "Mars|c", "Oreo|b", "Britannia|b", "Sunfeast|b", "Parle|b", "Dark Fantasy|b", "Hide & Seek|b", "Bourbon|b", "Good Day|b", "McVitie's|b", "Unibic|b", "Lay's|s", "Kurkure|s", "Bingo!|s", "Haldiram's|s", "Crax|s", "Uncle Chipps|s", "Doritos|s", "Pringles|s", "Too Yumm!|s", "Balaji|s", "Bikaji|s", "ACT II|s", "Nestlé|m", "Nescafé|m", "Bru|m", "Amul|m", "Mother Dairy|m", "Paper Boat|d", "Tropicana|d", "Real|d", "Yakult|d", "B Natural|d"].concat(["Kinley|d","Bisleri|d","Aquafina|d","Himalayan|d","Evian|d","Schweppes|d","Gatorade|d","Enerzal|d","Rasna|d","Ferrero Rocher|c","Toblerone|c","Galaxy|c","Bournville|c","Lindt|c","Hershey\'s|c","M&M\'s|c","Milkybar|c","Eclairs|c","Alpenliebe|c","Lotus Biscoff|b","Mom\'s Magic|b","Dukes|b","Cremica|b","Bonn|b","Open Secret|s","The Whole Truth|s","Yoga Bar|s","RiteBite|s","Cornitos|s","Saffola|s","Wingreens|s","TagZ|s","Beyond Snack|s","Farmley|s","Prasuma|s","Mr. Makhana|s","Let\'s Try|s","Kellogg\'s|s","Quaker|s","Bagrry\'s|s","MTR|s","Ching\'s Secret|s","Knorr|s","Kissan|s","Veeba|s","Epigamia|m","Paper Boat Swing|d","Raw Pressery|d"].map(x=>x)).map((x, i) => { const [n, c] = x.split('|'); return {n, c, t: false, f: 'img/b/b' + String(i + 1).padStart(2, '0') + '.jpg'}; });
   const CATS = [['all','All brands'],['d','Drinks'],['c','Chocolates'],['b','Biscuits'],['s','Chips & snacks'],['m','Dairy & coffee']];
-  g.innerHTML = B.map(b => `<div class="bt rv" data-c="${b.c}" data-n="${b.n.replace(/"/g, '&quot;')}" role="img" aria-label="${b.n.replace(/"/g, '&quot;')}">${b.t ? `<span class="bt-t${b.n.length > 8 ? ' sm' : ''}">${b.n}</span>` : `<img src="${b.f}" alt="" loading="lazy" draggable="false">`}</div>`).join('');
+  const esc = x => x.replace(/"/g, '&quot;');
+  const tile = b => `<div class="bt" data-n="${esc(b.n)}" role="img" aria-label="${esc(b.n)}"><img src="${b.f}" alt="" loading="lazy" draggable="false"></div>`;
+  const ROWS = 3;
+  const build = c => {
+    const list = c === 'all' ? B : B.filter(x => x.c === c);
+    const rows = Array.from({length: ROWS}, () => []);
+    list.forEach((b, i) => rows[i % ROWS].push(b));
+    g.innerHTML = rows.filter(r => r.length).map((r, k) => {
+      let items = r.slice(); while (items.length < 9) items = items.concat(r);
+      const html = items.map(tile).join('');
+      const dur = Math.max(26, items.length * (2.9 + k * .35));
+      return `<div class="bmq-row"><div class="bmq-track" style="animation-duration:${dur.toFixed(1)}s">${html}${html}</div></div>`;
+    }).join('');
+  };
+  build('all');
   f.innerHTML = CATS.map((c, i) => `<button type="button" class="btn ghost sm" data-c="${c[0]}" aria-pressed="${i === 0}">${c[1]}</button>`).join('');
-  const tiles = $$('.bt', g);
   f.addEventListener('click', e => {
     const b = e.target.closest('button'); if (!b) return;
     $$('button', f).forEach(x => x.setAttribute('aria-pressed', x === b));
-    tiles.forEach(t => t.classList.toggle('off', b.dataset.c !== 'all' && t.dataset.c !== b.dataset.c));
+    build(b.dataset.c);
   });
-  const cols = () => getComputedStyle(g).gridTemplateColumns.split(' ').length;
-  const show = (el, i) => { el.style.animationDelay = ((i % cols()) * 45 + Math.floor(i / cols()) * 70) + 'ms'; el.classList.add('in'); };
-  if (!('IntersectionObserver' in window) || reduce) tiles.forEach(show);
-  else { const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { show(e.target, tiles.indexOf(e.target)); io.unobserve(e.target); } }), {threshold:.1}); tiles.forEach(t => io.observe(t)); setTimeout(() => tiles.forEach(show), 7000); }
 })();
 
 
